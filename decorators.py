@@ -41,6 +41,9 @@ class Order:  #the Context
         fmt = '<Order total: {:.2f} due {:.2f}>'
         return fmt.format(self.total(), self.due())
 
+
+
+
 if __name__ == '__main__':
 
     joe = Customer('John Doe', 0)
@@ -56,4 +59,5 @@ if __name__ == '__main__':
     for cart, name in carts:
         print('If joe buys the {} his order (with he best discount) would be {}'.
               format(name, Order(joe,cart,best_promo)))
+
 
